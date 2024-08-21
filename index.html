@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Daisy UI and Tailwind CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!--Customize Tailwind CSS-->
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    padding: "1rem",
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <!--Header Section-->
+    <header class="bg-slate-100 pb-5">
+        <!--Navber-->
+        <div class="navbar  container mx-auto justify-between">
+            <div class="flex items-center gap-1">
+
+                <i
+                    class="ri-arrow-right-up-line w-5 flex items-center justify-center rounded-full h-5 bg-[#ABEF5F] mt-1"></i>
+                <a class=" text-xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold text-black">Home</a></li>
+                    <li><a class="font-bold text-gray-500">Services</a></li>
+                    <li><a class="font-bold text-gray-500">Portfolio</a></li>
+                    <li><a class="font-bold text-gray-500">Blog</a></li>
+                    <li><a class="font-bold text-gray-500">Contact Us</a></li>
+
+
+                </ul>
+            </div>
+            <div class="hidden lg:block lg:flex lg:gap-1">
+
+                <i
+                    class="ri-search-line  flex justify-center items-center text-black w-8 h-8 bg-white rounded-[100%] p-1"></i>
+                <i
+                    class="ri-shopping-cart-line  flex justify-center items-center text-black w-8 h-8 bg-white rounded-[100%] p-1"></i>
+                <a class="btn bg-[#ABEF5F] font-bold rounded-full ">Book Consult <i
+                        class="ri-arrow-right-up-line bg-black text-white rounded-full p-1"></i></a>
+
+            </div>
+            <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 -left-44 p-2 w-52 shadow">
+                    <li><a class="font-bold text-black">Home</a></li>
+                    <li><a class="font-bold text-gray-500">Services</a></li>
+                    <li><a class="font-bold text-gray-500">Portfolio</a></li>
+                    <li><a class="font-bold text-gray-500">Blog</a></li>
+                    <li><a class="font-bold text-gray-500">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!--Banner Section-->
+        <div class="container mx-auto flex flex-col gap-5">
+            <div class="self-center">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="flex flex-col gap-5">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl text-center font-extrabold">Find Your Perfect Property:
+                    Luxury Homes
+                    Opportunities Await</h1>
+                <p class="text-center text-sm md:text-sm md:w-[75%] md:mx-auto text-gray-500 font-semibold ">Discover a
+                    wide range of premium properties that
+                    perfectly blend luxury, comfort, and convenience.
+                    Whether you're looking for a modern apartment in the heart of the city or a serene retreat in the
+                    suburbs, we offer expertly designed buildings that meet all your needs. </p>
+                <button class="btn self-center bg-[#acef5f65] rounded-full font-bold">View Details <i
+                        class="ri-arrow-right-up-line w-5 flex items-center justify-center rounded-full h-5 bg-[#ABEF5F] mt-1 "></i></button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--Main Section-->
+    <main>
+        <!--Section-1-->
+        <section class="bg-slate-200 py-10 lg:py-16">
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 container mx-auto relative">
+                <!--Left-->
+                <div class="flex flex-col gap-3 lg:w-1/2">
+                    <button class="btn self-center lg:self-start rounded-full bg-white"><i
+                            class="ri-arrow-right-line"></i>About
+                        Us</button>
+                    <h1 class="text-3xl font-extrabold text-center lg:text-left">We design thoughtful, <br> liveable
+                        spaces</h1>
+                    <p class="text-center text-sm text-gray-600 md:w-[70%] md:mx-auto lg:text-left lg:mx-0 lg:mb-5">We
+                        create spaces that blend
+                        functionality with style. Our
+                        designs focus on livability, making each area a perfect balance of beauty and practicality. </p>
+                    <div class="flex flex-col  gap-5 md:flex-row lg:flex-col">
+                        <div class="w-full bg-white rounded-xl p-5 flex gap-4">
+                            <div class="mb-2 w-[20%] lg:w-[10%]">
+                                <img src="./assets/commercial.png" alt="">
+                            </div>
+                            <div class="w-[80%] lg:w-[60%]">
+                                <h1 class="text-lg font-bold">Commercial</h1>
+                                <p class="text-sm text-gray-500">Maximize your business potential with our expertly
+                                    designed
+                                    commercial spaces that prioritize efficiency and aesthetics.</p>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white rounded-xl p-5 flex gap-4">
+                            <div class="mb-2 w-[20%] lg:w-[10%]">
+                                <img src="./assets/residential.png" alt="">
+                            </div>
+                            <div class="w-[80%] lg:w-[60%]">
+                                <h1 class="text-lg font-bold">Residential</h1>
+                                <p class="text-sm text-gray-500">Experience the comfort and elegance of our thoughtfully
+                                    crafted residential spaces designed for modern living.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Right-->
+                <div class=" lg:w-1/2">
+                    <img src="./assets/Rectangle.png" alt=""
+                        class="h-[200px] md:h-[400px] lg:h-[90%] w-full object-cover rounded-xl">
+                </div>
+                <img src="./assets/Vector.png" alt="" class="absolute -top-12 lg:-left-8">
+            </div>
+
+            <!--Count-->
+            
+
+
+        </section>
+    </main>
+
+
+    <!--Footer Section-->
+    <footer></footer>
+
+</body>
+
+</html>
