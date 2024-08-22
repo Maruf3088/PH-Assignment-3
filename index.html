@@ -37,11 +37,15 @@
             }
         }
     </script>
+    <!--CSS-->
+    <style>
+
+    </style>
 </head>
 
 <body class="font-manrope">
     <!--Header Section-->
-    <header class="bg-slate-100 pb-5">
+    <header class="bg-slate-100 pb-5 lg:pb-14">
         <!--Navber-->
         <div class="navbar  container mx-auto justify-between">
             <div class="flex items-center gap-1">
@@ -118,9 +122,9 @@
     <main>
         <!--Section-1-->
         <section class="bg-slate-200 py-10 lg:py-16">
-            <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-20 container mx-auto relative">
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 xl:gap-20  container mx-auto relative">
                 <!--Left-->
-                <div class="flex flex-col gap-3 lg:w-1/2  lg:self-end">
+                <div class="flex flex-col gap-3 lg:w-1/2  lg:self-end ">
                     <button class="btn self-center lg:self-start rounded-full bg-white"><i
                             class="ri-arrow-right-line"></i>About
                         Us</button>
@@ -157,9 +161,9 @@
 
                 </div>
                 <!--Right-->
-                <div class=" lg:w-1/2 lg:self-end">
+                <div class=" lg:w-1/2  ">
                     <img src="./assets/Rectangle.png" alt=""
-                        class="h-[200px] md:h-[400px] w-full lg:w-auto lg:h-[100%] xl:h-1/2  object-cover rounded-xl">
+                        class="h-[200px] md:h-[400px] w-full lg:w-auto   lg:h-[100%]    object-cover rounded-xl">
                 </div>
                 <img src="./assets/Vector.png" alt="" class="absolute -top-12 lg:-left-8">
             </div>
@@ -277,7 +281,7 @@
 
                     <!--Div-2-->
                     <div class="p-5  rounded-xl flex flex-col gap-5 bg-white lg:col-span-2">
-                        <img src="./assets/img2.png" alt="" class="h-full lg:h-[200px] lg:rounded-xl object-cover">
+                        <img src="./assets/img2.png" alt="" class="h-full lg:h-[200px] 2xl:h-[250px] lg:rounded-xl object-cover">
                     </div>
 
                     <!--Div-3-->
@@ -313,6 +317,69 @@
                 </div>
 
             </div>
+        </section>
+        <!--My section-->
+        <section
+            class="relative w-full  bg-red-400 bg-[url('./assets/mybg.jpg')] bg-no-repeat bg-cover lg:bg-fixed  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-blue-300 before:opacity-70 before:z-0 py-10 lg:py-16">
+
+
+            <div class="relative z-10 container mx-auto flex flex-col gap-5  ">
+                <h1 class="text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center text-white ">Request A Tour</h1>
+                <p class="text-white text-center text-sm md:w-[80%] lg:w-[60%] lg:pb-5 md:mx-auto">Get in Touch With
+                    Us for Any Questions & Help</p>
+                <div
+                    class="bg-white py-5 px-5 lg:py-24 rounded-xl text-2xl  font-light grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 2xl:w-[84%] 2xl:mx-auto">
+                    <div class="flex flex-col lg:flex-row  gap-8 xl:gap-0 lg:col-span-2">
+                        <p class="xl:w-[50%]">Hey My name is <input type="text"
+                                class="border-b-2 border-gray-500 w-full lg:w-auto xl:w-[70%] transition-colors duration-300 focus:outline-none focus:border-green-400">
+                        </p>
+                        <p class="xl:w-[50%]">and my email id is <input type="email"
+                                class="border-b-2 border-gray-500 w-full lg:w-auto xl:w-[67%]  transition-colors duration-300 focus:outline-none focus:border-green-400">
+                        </p>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <p class="flex flex-col lg:flex-row lg:w-[100%] gap-3">I would like to schedule a tour at date
+                            and time <input type="date"
+                                class="border-b-2 border-gray-500 lg:w-[45%] xl:w-[57%] transition-colors duration-300 focus:outline-none focus:border-green-400">
+                        </p>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <p>I would like to discuss about <input type="text"
+                                class="border-b-2 border-gray-500 w-full lg:w-[67%] xl:w-[74%] transition-colors duration-300 focus:outline-none focus:border-green-400">
+                        </p>
+                    </div>
+                    <a class=" btn bg-[#ABEF5F] font-extrabold text-xl rounded-full justify-self-start ">Schedule a Tour<i
+                        class=" ri-arrow-right-up-line bg-black text-white w-8 h-8 rounded-full grid
+                            place-content-center p-1 focus:outline-[#ABEF5F]"></i></a>
+
+
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 2xl:w-[84%] 2xl:mx-auto" >
+                    <div class="flex items-center gap-4">
+                        <img src="https://sample.realhomes.io/single-property-02/wp-content/uploads/sites/3/2021/10/Female-Agent-150X150.jpg"
+                            alt="" class="rounded-full w-[70px]">
+                        <div>
+                            <h1 class="text-xl text-white font-bold">Melissa William</h1>
+                            <p class="text-white">Real Estate Agent</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-xl text-white font-bold">contact@realhomes.io</h1>
+                        <p class="text-white">(223) 546 7594</p>
+                    </div>
+                    <div class="md:ml-20">
+                        <h1 class="text-xl text-white font-bold">Aragon Ave, Coral Gables,</h1>
+                        <p class="text-white">FL 33134, USA</p>
+                    </div>
+                    <div>
+                        <h1 class="text-xl text-white font-bold">Would you like to Visit the property?</h1>
+                        <a class="text-white underline font-semibold" href="#">Schedule a Meeting</a>
+
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!--Section-3-->
         <section class="bg-slate-200 py-10 lg:py-16">
@@ -394,7 +461,7 @@
             </div>
         </section>
         <!--Section-4-->
-        <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover py-10 lg:py-16">
+        <section class="bg-[url('./assets/bg.jpg')] lg:bg-fixed bg-no-repeat bg-cover py-10 lg:py-16">
             <div class="container mx-auto flex flex-col gap-5">
                 <button class="btn self-center  rounded-full bg-[#ABEF5F33]"><i class="ri-arrow-right-line"></i>Let’s
                     Connect</button>
@@ -426,7 +493,7 @@
                     </div>
                     <a class=" btn bg-[#ABEF5F] font-extrabold text-xl rounded-full ">Send Mail<i
                             class=" ri-arrow-right-up-line bg-black text-white w-8 h-8 rounded-full grid
-                                place-content-center p-1 focus:outline-[#ABEF5F]""></i></a>
+                                place-content-center p-1 focus:outline-[#ABEF5F]"></i></a>
 
                         </div>
                     </div>
@@ -443,7 +510,8 @@
                     class="ri-arrow-right-up-line w-8 flex items-center justify-center rounded-full h-8 bg-[#ABEF5F] mt-1"></i>
                 <a class=" text-3xl text-white font-bold">Rinterio</a>
             </div>
-            <h1 class="text-gray-400 text-center md:w-[70%] xl:w-[50%] md:mb-5 md:mx-auto">Thank you for visiting our site—stay connected for the latest updates.
+            <h1 class="text-gray-400 text-center md:w-[70%] xl:w-[50%] md:mb-5 md:mx-auto">Thank you for visiting our
+                site—stay connected for the latest updates.
                 We look forward to collaborating with you on your next project!</h1>
             <div class="flex flex-col md:flex-row md:gap-12 md:mb-5 gap-5 list-none text-white font-bold text-center">
                 <li><a href="#">Home</a></li>
